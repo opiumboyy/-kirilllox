@@ -1,0 +1,10 @@
+.operands-block {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    text-align: center;
+}
+
+.operands-block > div {
+    align-self: center;
+    justify-self: center;
+}

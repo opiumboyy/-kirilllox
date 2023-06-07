@@ -1,0 +1,14 @@
+.figure-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    background: #ddd232;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.figure-button:hover {
+    background: #afa629;
+}

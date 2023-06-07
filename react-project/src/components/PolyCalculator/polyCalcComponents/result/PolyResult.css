@@ -1,0 +1,30 @@
+.poly-result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poly-result-container>textarea {
+    outline: none;
+    text-align: center;
+}
+
+.poly-result-container>div {
+    line-height: 30px;
+    width: 120px;
+    height: 30px;
+    margin: 10px;
+    background-color: #c9c971;
+    text-align: center;
+    user-select: none;
+}
+
+.poly-result {
+    background-color: #bebeb2;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    outline: none;
+}

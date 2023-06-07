@@ -1,0 +1,17 @@
+#canvas2D {
+    border-radius: 20px;
+    cursor: grab;
+    border: 1px solid black;
+    position: absolute;
+    z-index: -1;
+}
+
+#canvas2D:active {
+    cursor: grabbing;
+}
+
+.graph2D {
+    position: relative;
+    display: flex;
+    width: 1200px;
+}

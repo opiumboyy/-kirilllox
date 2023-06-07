@@ -1,0 +1,6 @@
+.poly-operands-block {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}

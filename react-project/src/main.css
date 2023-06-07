@@ -1,0 +1,422 @@
+.hide {
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color:  hwb(0 9% 91%);
+}
+
+textarea {
+    outline: none;
+    min-height: 30px;
+    min-width: 50px;
+    z-index: 3;
+}
+
+
+#app {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+}
+.canvas{
+    background-color: #28262321;
+}
+
+
+.mainMenuButton {
+    background-color: #d4dd57;
+    border-radius: 10px;
+    margin: 5px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 250%;
+    user-select: none;
+    cursor: pointer;
+    transition: .1s;
+}
+
+
+   
+    
+    
+
+
+.mainMenuButton:hover {
+    background-color: #161715c9;
+}
+
+.mainMenuButton:active {
+    transform: translateY(1px);
+}
+
+.calcInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: 12px;
+}
+
+.calcInput textarea {
+    text-align: center;
+    height: 50px;
+    margin: 10px;
+    outline: none;
+}
+
+.resultContainer>textarea,
+.polyResult {
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+    margin: 10px;
+}
+
+.newPoly {
+    z-index: 1;
+}
+
+.result,
+.polyResult {
+    background-color: #bebeb2;
+    z-index: 1;
+}
+
+
+.calcButtons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+    margin-bottom: 0;
+}
+
+.calcButtons>div {
+    width: 100%;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.operand,
+.polyOperand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    background-color: #c9bc71;
+    margin: 0 10px 10px;
+    user-select: none;
+    transition: 0.1s;
+}
+
+.operand:hover,
+.polyOperand:hover,
+.resultButton:hover {
+    cursor: pointer;
+    background-color: #a0a078;
+}
+
+.operand:active,
+.polyOperand:active,
+.resultButton:active {
+    transform: translateY(1px);
+}
+
+.resultContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.resultButton {
+    height: 20px;
+    width: 30px;
+    margin: 10px;
+    background-color: #c9c971;
+    text-align: center;
+}
+
+#polyomialCalculator,
+#calculator {
+    background-color: #232120;
+}
+
+#canvas2D,
+#canvas3D {
+    cursor: grab;
+    
+    
+    
+}
+
+#canvas2D:active,
+#canvas3D:active {
+    cursor: grabbing;
+}
+
+#graph2D,
+#graph3D {
+    max-height: 800px;
+    background-color: #28262321;
+}
+
+.funcs-сontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+.funcBlock input::-webkit-outer-spin-button,
+.funcBlock input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.funcBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    width: 80%;
+}
+
+.funcBlock input {
+    margin: 1px;
+    text-align: center;
+    outline: none;
+}
+
+.container,
+.container3D {
+  position: fixed;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(71, 69, 66, 0.512);
+  width: 250px;
+  height: 800px;
+  right: 0;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container>.block {
+    width: 100%;
+    max-height: 100%;
+}
+
+
+
+.menuGraphButton,
+.menuGraph3DButton {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: -30px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(2, 2, 2);
+  cursor: pointer;
+}
+
+.funcMenu,
+.figuresMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.deleteFunc {
+    width: 15px;
+    height: 15px;
+    background-color: azure;
+    text-align: center;
+    line-height: 15px;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.deleteFunc:hover {
+    background-color: #da4f4f;
+}
+
+.addFunction,
+.addFigure {
+    width: 90px;
+    height: 20px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: azure;
+    border-radius: 5px;
+    user-select: none;
+    transition: .1s;
+}
+
+.addFunction:hover,
+.addFigure:hover {
+    background-color: #d0f5f5;
+    cursor: pointer;
+}
+
+.addFunction:active,
+.addFigure:active {
+    transform: translateY(2px);
+}
+
+
+.deleteFunc:hover {
+    cursor: pointer;
+}
+
+
+
+.switch-btn {
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    border-radius: 19px;
+    background: #bfbfbf;
+    z-index: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.switch-btn::after {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 17px;
+    background: #fff;
+    left: 0;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.switch-on {
+    background: #3e4341;
+}
+
+.switch-on::after {
+    left: 15px;
+}
+
+.inputColor {
+    border-radius: 50%;
+    background-color: transparent;
+    height: 25px;
+    width: 26px;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.inputColor::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.inputColor::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.funcBlock>.inputA,
+.funcBlock>.inputB {
+    width: 30px;
+}
+
+.inputWidth,
+.inputFunc {
+    width: 60px;
+}
+
+.funcBlock>.inputA,
+.funcBlock>.inputB,
+.inputWidth,
+.inputFunc {
+    background-color: white;
+    border: 1px solid rgb(67, 65, 63);
+    border-radius: 10px;
+}
+
+#figuresList {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 130px;
+    text-align: center;
+    outline: none;
+  }
+
+#figuresList>div {
+    background-color: #c9bc71;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+#figuresList>div:hover {
+    background-color: #afa364;
+}
+
+#figuresList>div:active {
+    transform: translateY(1px);
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-color: rgba(31, 33, 31, 0.09);
+    font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.menu-item:hover{
+    background-color: rgba(124, 130, 124, 0.09);
+}
+
+.hide{
+    display: none;
+}
+
+#canvas3D{
+    display: block;
+    background: rgb(27, 27, 33);
+}
+.figuresCheckBoxes{
+    color: white;
+}

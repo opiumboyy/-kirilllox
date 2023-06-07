@@ -1,0 +1,13 @@
+.result-container {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+
+.calc-result {
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+    margin: 10px;
+    background-color: #bebeb2;
+}

@@ -1,0 +1,17 @@
+#canvas3D {
+    cursor: grab;
+    border: 1px solid black;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+#canvas3D:active {
+    cursor: grabbing;
+}
+
+.graph3D {
+    position: relative;
+    display: flex;
+    width: 1200px;
+}

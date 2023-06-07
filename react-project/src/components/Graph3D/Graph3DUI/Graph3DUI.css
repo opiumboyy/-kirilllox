@@ -1,0 +1,33 @@
+.graph3DUI {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.graph3DUI>button {
+    border-radius: 100%;
+    border: 1px solid #707ebd;
+    background-color: #707ebd;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.figures-menu {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 1px 0 0 1px;
+    background-color: #bdae2c;
+    justify-content: center;
+    width: 400px;
+    height: 800px;
+    max-height: 800px;
+}
+
+.add-button-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

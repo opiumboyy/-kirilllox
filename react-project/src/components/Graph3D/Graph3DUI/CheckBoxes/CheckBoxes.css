@@ -1,0 +1,12 @@
+.checkboxes {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.checkboxes>div {
+    margin: 2px 5px;
+}

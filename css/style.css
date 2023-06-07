@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-color: hwb(0 9% 91%);
+    font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.menu-item:hover{
+    background-color: rgba(124, 130, 124, 0.09);
+}
+
+.hide{
+    display: none;
+}
+
+#canvas3D{
+    display: block;
+    background: #28262321;
+}
+
